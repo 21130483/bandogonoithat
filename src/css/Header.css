@@ -1,0 +1,13 @@
+.btn-wood {
+    background-color: #b0803c;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 7px 18px;
+    font-size: 16px;
+}
+
+.btn-wood:hover {
+    background-color: #8B4513; /* Màu đậm hơn khi di chuột vào */
+    color: white;
+}

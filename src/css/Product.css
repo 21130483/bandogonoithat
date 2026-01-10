@@ -1,0 +1,5 @@
+.product-card:hover {
+    /* Loại bỏ transform: translateY */
+    /* Tăng độ lan tỏa của bóng để trông sang trọng hơn */
+    box-shadow: 0 8px 25px #b0803c;
+}
