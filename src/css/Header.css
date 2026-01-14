@@ -11,3 +11,8 @@
     background-color: #8B4513; /* Màu đậm hơn khi di chuột vào */
     color: white;
 }
+.btn-wood:active {
+    transform: scale(0.97); /* Card hơi lún xuống một chút (thu nhỏ 3%) */
+    box-shadow: 0 4px 10px rgba(176, 128, 60, 0.2); /* Bóng thu hẹp lại khi nhấn xuống */
+    transition: transform 0.1s; /* Phản hồi cực nhanh khi nhấn */
+}

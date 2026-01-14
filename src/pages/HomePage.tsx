@@ -10,9 +10,9 @@ import "../css/HomePage.css"
 function HomePage () {
     return (
         <div>
-            <Navbar sticky="top" className="bg-white border-bottom p-0 w-100">
-                <Header />
-            </Navbar>
+            {/*<Navbar sticky="top" className="bg-white border-bottom p-0 w-100">*/}
+            {/*    <Header />*/}
+            {/*</Navbar>*/}
             <SecondHomePage />
 
             <Container>
@@ -49,7 +49,7 @@ function HomePage () {
                 </Row>
 
             </Container>
-            <Footer />
+            {/*<Footer />*/}
         </div>
     )
 }
