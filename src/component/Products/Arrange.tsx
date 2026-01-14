@@ -5,7 +5,7 @@ function Arrange(){
     return (
         <Container>
             <Row className="gy-3">
-                <span className={"title"}>
+                <span className={"titleProducts title"}>
                     <h1>Kết quả tìm kiếm "s"</h1>
 
                 </span>
