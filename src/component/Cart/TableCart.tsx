@@ -29,7 +29,7 @@ function TableCart() {
     };
 
     return (
-        <div className="cart-wrapper mt-4">
+        <div className="cart-wrapper">
             <Table responsive className="align-middle border-bottom">
                 <thead>
                 <tr className="text-uppercase" style={{ fontSize: '14px', borderBottom: '2px solid #eee' }}>
