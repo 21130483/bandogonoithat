@@ -10,6 +10,9 @@ function Cart(){
         <Container className="p-3">
             <Row>
                 <Col md={8} className="d-flex flex-column gap-3">
+                    <div className="title">
+                        Giỏ hàng
+                    </div>
                     <TableCart />
                 </Col>
 
@@ -17,12 +20,12 @@ function Cart(){
                     <div className="cart-summary p-4 border rounded-3 bg-white shadow-sm">
                         <div className="d-flex justify-content-between mb-3">
                             <span className="text-muted">Tạm tính</span>
-                            <span className="fw-bold">3.995.000 đ</span>
+                            <span className="text-dark fw-medium">3.995.000 đ</span>
                         </div>
 
                         <div className="d-flex justify-content-between mb-3">
                             <span className="text-muted">Giảm giá ưu đãi</span>
-                            <span>-</span>
+                            <span  className="text-dark fw-medium">3.995.000 đ</span>
                         </div>
 
 
