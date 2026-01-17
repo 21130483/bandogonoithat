@@ -16,7 +16,9 @@ function Products(){
                 </Row>
 
                 <Row className="mb-3">
-                    <Col><ProductList /></Col>
+                    <Col>
+                        {/*<ProductList />*/}
+                    </Col>
                 </Row>
 
                 <Row>

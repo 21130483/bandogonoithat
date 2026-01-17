@@ -4,11 +4,18 @@ import Products from "../pages/Products";
 import Product from "../pages/Product";
 import Cart from "../pages/Cart";
 import Transaction from "../pages/Transaction";
+import MainLayout from "../component/Common/MainLayout";
 
 export const router = createBrowserRouter([
-    {path:"/",element: <HomePage />},
-    {path:"/products",element: <Products />},
-    {path:"/product",element: <Product />},
-    {path:"/cart",element: <Cart />},
-    {path:"/transaction",element: <Transaction />}
-])
+    {
+        path: "/",
+        element: <MainLayout />, // Layout chứa Header/Footer
+        children: [
+            { path: "/", element: <HomePage /> },
+            { path: "/products", element: <Products /> },
+            { path: "/product/:id", element: <Product /> },
+            { path: "/cart", element: <Cart /> },
+            { path: "/transaction", element: <Transaction /> }
+        ]
+    }
+]);
