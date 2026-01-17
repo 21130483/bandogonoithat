@@ -1,0 +1,790 @@
+[
+  {
+    "id": 1,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/1/1.jpg",
+      "/images/products/1/2.jpg",
+      "/images/products/1/3.jpg",
+      "/images/products/1/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 2,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/2/1.jpg",
+      "/images/products/2.jpg",
+      "/images/products/2/3.jpg",
+      "/images/products/2/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 3,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/3/1.jpg",
+      "/images/products/3/2.jpg",
+      "/images/products/3/3.jpg",
+      "/images/products/3/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 4,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/4/1.jpg",
+      "/images/products/4/2.jpg",
+      "/images/products/4/3.jpg",
+      "/images/products/4/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 5,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/5/1.jpg",
+      "/images/products/5/2.jpg",
+      "/images/products/5/3.jpg",
+      "/images/products/5/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 6,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/6/1.jpg",
+      "/images/products/6/2.jpg",
+      "/images/products/6/3.jpg",
+      "/images/products/6/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 7,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/7/1.jpg",
+      "/images/products/7/2.jpg",
+      "/images/products/7/3.jpg",
+      "/images/products/7/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 8,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/8/1.jpg",
+      "/images/products/8/2.jpg",
+      "/images/products/8/3.jpg",
+      "/images/products/8/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 9,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/9/1.jpg",
+      "/images/products/9/2.jpg",
+      "/images/products/9/3.jpg",
+      "/images/products/9/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 10,
+    "name": "Bàn Ăn Gỗ Óc Chó Royal",
+    "price": 15000000,
+    "categoryId": 1,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/10/1.jpg",
+      "/images/products/10/2.jpg",
+      "/images/products/10/3.jpg",
+      "/images/products/10/4.jpg"
+    ],
+    "description": "Bàn ăn phong cách hoàng gia với vân gỗ tự nhiên sang trọng, bề mặt sơn PU chống trầy xước."
+  },
+  {
+    "id": 11,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/11/1.jpg",
+      "/images/products/11/2.jpg",
+      "/images/products/11/3.jpg",
+      "/images/products/11/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 12,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/12/1.jpg",
+      "/images/products/12/2.jpg",
+      "/images/products/12/3.jpg",
+      "/images/products/12/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  },
+  {
+    "id": 13,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/13/1.jpg",
+      "/images/products/13/2.jpg",
+      "/images/products/13/3.jpg",
+      "/images/products/13/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  },
+  {
+    "id": 14,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/14/1.jpg",
+      "/images/products/14/2.jpg",
+      "/images/products/14/3.jpg",
+      "/images/products/14/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 15,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/15/1.jpg",
+      "/images/products/15/2.jpg",
+      "/images/products/15/3.jpg",
+      "/images/products/15/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 16,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/16/1.jpg",
+      "/images/products/16/2.jpg",
+      "/images/products/16/3.jpg",
+      "/images/products/16/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 17,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/17/1.jpg",
+      "/images/products/17/2.jpg",
+      "/images/products/17/3.jpg",
+      "/images/products/17/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 18,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/18/1.jpg",
+      "/images/products/18/2.jpg",
+      "/images/products/18/3.jpg",
+      "/images/products/18/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 19,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/19/1.jpg",
+      "/images/products/19/2.jpg",
+      "/images/products/19/3.jpg",
+      "/images/products/19/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 20,
+    "name": "Giường Ngủ Nữ Hoàng Gỗ Hương Đá",
+    "price": 15000000,
+    "categoryId": 2,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/20/1.jpg",
+      "/images/products/20/2.jpg",
+      "/images/products/20/3.jpg",
+      "/images/products/20/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  },
+  {
+    "id": 21,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/21/1.jpg",
+      "/images/products/21/2.jpg",
+      "/images/products/21/3.jpg",
+      "/images/products/21/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 22,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/22/1.jpg",
+      "/images/products/22/2.jpg",
+      "/images/products/22/3.jpg",
+      "/images/products/22/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 23,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/23/1.jpg",
+      "/images/products/23/2.jpg",
+      "/images/products/23/3.jpg",
+      "/images/products/23/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 24,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/24/1.jpg",
+      "/images/products/24/2.jpg",
+      "/images/products/24/3.jpg",
+      "/images/products/24/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 25,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/25/1.jpg",
+      "/images/products/25/2.jpg",
+      "/images/products/25/3.jpg",
+      "/images/products/25/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 26,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/26/1.jpg",
+      "/images/products/26/2.jpg",
+      "/images/products/26/3.jpg",
+      "/images/products/26/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  },
+  {
+    "id": 27,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/27/1.jpg",
+      "/images/products/27/2.jpg",
+      "/images/products/27/3.jpg",
+      "/images/products/27/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 28,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/28/1.jpg",
+      "/images/products/28/2.jpg",
+      "/images/products/28/3.jpg",
+      "/images/products/28/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 29,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/29/1.jpg",
+      "/images/products/29/2.jpg",
+      "/images/products/29/3.jpg",
+      "/images/products/29/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  }
+,
+  {
+    "id": 30,
+    "name": "Ghế khung thép sơn tĩnh điện bọc da Microfiber KY-GH 15",
+    "price": 15000000,
+    "categoryId": 3,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/30/1.jpg",
+      "/images/products/30/2.jpg",
+      "/images/products/30/3.jpg",
+      "/images/products/30/4.jpg"
+    ],
+    "description": "Giường ngủ gỗ hương đá nữ hoàng đẹp với mẫu mã đẹp, chất lượng bền chắc sẽ giúp cho phòng ngủ của bạn trở nên nổi bật, ấm cúng và mang lại giấc ngủ ngon, êm ái, thoải mái sau những giờ làm việc căng thẳng. Hãy để mẫu giường gỗ đẹp tuyệt vời này nâng niu từng giấc ngủ của bạn và các thành viên trong gia đình, để mỗi ngày trôi qua thật trọn vẹn, ý nghĩa."
+  },
+  {
+    "id": 31,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/21/1.jpg",
+      "/images/products/21/2.jpg",
+      "/images/products/21/3.jpg",
+      "/images/products/21/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 32,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/32/1.jpg",
+      "/images/products/32/2.jpg",
+      "/images/products/32/3.jpg",
+      "/images/products/32/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 33,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/33/1.jpg",
+      "/images/products/33/2.jpg",
+      "/images/products/33/3.jpg",
+      "/images/products/33/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 34,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/34/1.jpg",
+      "/images/products/34/2.jpg",
+      "/images/products/34/3.jpg",
+      "/images/products/34/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 35,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/35/1.jpg",
+      "/images/products/35/2.jpg",
+      "/images/products/35/3.jpg",
+      "/images/products/35/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 36,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/36/1.jpg",
+      "/images/products/36/2.jpg",
+      "/images/products/36/3.jpg",
+      "/images/products/36/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 37,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/37/1.jpg",
+      "/images/products/37/2.jpg",
+      "/images/products/37/3.jpg",
+      "/images/products/37/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 38,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/38/1.jpg",
+      "/images/products/38/2.jpg",
+      "/images/products/38/3.jpg",
+      "/images/products/38/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 39,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/39/1.jpg",
+      "/images/products/39/2.jpg",
+      "/images/products/39/3.jpg",
+      "/images/products/39/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 40,
+    "name": "Tủ bếp KY-GH TB112",
+    "price": 15000000,
+    "categoryId": 4,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/40/1.jpg",
+      "/images/products/40/2.jpg",
+      "/images/products/40/3.jpg",
+      "/images/products/40/4.jpg"
+    ],
+    "description": "Tủ bếp là một phần quan trọng trong không gian nhà bếp, và có thể được sử dụng để lưu trữ và tổ chức các đồ dùng nhà bếp, đồ nấu ăn và tiện ích khác. Tủ bếp từ gỗ MDF thường được hoàn thiện bề mặt bằng sơn 2K, Laminate, Melamine, Acylic làm cho chúng dễ dàng vệ sinh và chùi rửa. Bề mặt không porus giúp ngăn chặn sự thấm nước và bụi bẩn vào gỗ, giúp kéo dài tuổi thọ và duy trì tính thẩm mỹ của tủ bếp."
+  },
+  {
+    "id": 41,
+    "name": "Án Thờ, Bàn Thờ Gia Tiên Gỗ Gõ Đỏ Đẹp",
+    "price": 15000000,
+    "categoryId": 5,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/41/1.jpg",
+      "/images/products/41/2.jpg",
+      "/images/products/41/3.jpg",
+      "/images/products/41/4.jpg"
+    ],
+    "description": "Án thờ gỗ gõ đỏ AT01 là biểu tượng của sự tôn kính và hiếu đạo, giúp gia chủ thể hiện lòng biết ơn sâu sắc với ông bà, tổ tiên, và các bậc tiền nhân.\n\nKhông chỉ là nơi thờ tự linh thiêng, mà còn là tác phẩm nghệ thuật nội thất giúp không gian sống thêm ấm cúng, sang trọng và trang nghiêm.\n\nVới thiết kế uy nghi, tinh tế, án thờ gỗ gõ đỏ AT01 mang đến cảm giác vững chãi – thanh tịnh – đầy tài khí, giúp thu hút may mắn và vượng khí cho ngôi nhà."
+  },
+  {
+    "id": 42,
+    "name": "Án Thờ, Bàn Thờ Gia Tiên Gỗ Gõ Đỏ Đẹp",
+    "price": 15000000,
+    "categoryId": 5,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/42/1.jpg",
+      "/images/products/42/2.jpg",
+      "/images/products/42/3.jpg",
+      "/images/products/42/4.jpg"
+    ],
+    "description": "Án thờ gỗ gõ đỏ AT01 là biểu tượng của sự tôn kính và hiếu đạo, giúp gia chủ thể hiện lòng biết ơn sâu sắc với ông bà, tổ tiên, và các bậc tiền nhân.\n\nKhông chỉ là nơi thờ tự linh thiêng, mà còn là tác phẩm nghệ thuật nội thất giúp không gian sống thêm ấm cúng, sang trọng và trang nghiêm.\n\nVới thiết kế uy nghi, tinh tế, án thờ gỗ gõ đỏ AT01 mang đến cảm giác vững chãi – thanh tịnh – đầy tài khí, giúp thu hút may mắn và vượng khí cho ngôi nhà."
+  },
+  {
+    "id": 43,
+    "name": "Án Thờ, Bàn Thờ Gia Tiên Gỗ Gõ Đỏ Đẹp",
+    "price": 15000000,
+    "categoryId": 5,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/43/1.jpg",
+      "/images/products/43/2.jpg",
+      "/images/products/43/3.jpg",
+      "/images/products/43/4.jpg"
+    ],
+    "description": "Án thờ gỗ gõ đỏ AT01 là biểu tượng của sự tôn kính và hiếu đạo, giúp gia chủ thể hiện lòng biết ơn sâu sắc với ông bà, tổ tiên, và các bậc tiền nhân.\n\nKhông chỉ là nơi thờ tự linh thiêng, mà còn là tác phẩm nghệ thuật nội thất giúp không gian sống thêm ấm cúng, sang trọng và trang nghiêm.\n\nVới thiết kế uy nghi, tinh tế, án thờ gỗ gõ đỏ AT01 mang đến cảm giác vững chãi – thanh tịnh – đầy tài khí, giúp thu hút may mắn và vượng khí cho ngôi nhà."
+  },
+  {
+    "id": 44,
+    "name": "Án Thờ, Bàn Thờ Gia Tiên Gỗ Gõ Đỏ Đẹp",
+    "price": 15000000,
+    "categoryId": 5,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/44/1.jpg",
+      "/images/products/44/2.jpg",
+      "/images/products/44/3.jpg",
+      "/images/products/44/4.jpg"
+    ],
+    "description": "Án thờ gỗ gõ đỏ AT01 là biểu tượng của sự tôn kính và hiếu đạo, giúp gia chủ thể hiện lòng biết ơn sâu sắc với ông bà, tổ tiên, và các bậc tiền nhân.\n\nKhông chỉ là nơi thờ tự linh thiêng, mà còn là tác phẩm nghệ thuật nội thất giúp không gian sống thêm ấm cúng, sang trọng và trang nghiêm.\n\nVới thiết kế uy nghi, tinh tế, án thờ gỗ gõ đỏ AT01 mang đến cảm giác vững chãi – thanh tịnh – đầy tài khí, giúp thu hút may mắn và vượng khí cho ngôi nhà."
+  }
+
+,
+  {
+    "id": 45,
+    "name": "Đồng hồ để bàn hồ lô hút tài lộc DHB-503",
+    "price": 15000000,
+    "categoryId": 5,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/45/1.jpg",
+      "/images/products/45/2.jpg",
+      "/images/products/45/3.jpg",
+      "/images/products/45/4.jpg"
+    ],
+    "description": "Là mẫu đồng hồ trang trí thích hợp đặt ở phòng khách, phòng làm việc, bàn làm việc hoặc trưng bày. Bên cạnh đó đây còn là món quà đắng cấp dành cho sếp, đối tác, người thân… thể hiện tình cảm, ước muốn của người đem tặng .\nĐồng hồ thiết kế quả hồ lô mang lại may mắn hút tài lộc\nMáy chạy pin, kim trôi tĩnh âm và không đánh chuông.\nMẫu đồng hồ đồng vàng , đế gỗ sẽ giúp những khoảng trống của không gian thêm phần  mới mẻ và sang  trọng hơn."
+  },
+  {
+    "id": 46,
+    "name": "Đồng hồ để bàn hồ lô hút tài lộc DHB-503",
+    "price": 15000000,
+    "categoryId": 5,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/46/1.jpg",
+      "/images/products/46/2.jpg",
+      "/images/products/46/3.jpg",
+      "/images/products/46/4.jpg"
+    ],
+    "description": "Là mẫu đồng hồ trang trí thích hợp đặt ở phòng khách, phòng làm việc, bàn làm việc hoặc trưng bày. Bên cạnh đó đây còn là món quà đắng cấp dành cho sếp, đối tác, người thân… thể hiện tình cảm, ước muốn của người đem tặng .\nĐồng hồ thiết kế quả hồ lô mang lại may mắn hút tài lộc\nMáy chạy pin, kim trôi tĩnh âm và không đánh chuông.\nMẫu đồng hồ đồng vàng , đế gỗ sẽ giúp những khoảng trống của không gian thêm phần  mới mẻ và sang  trọng hơn."
+  },
+  {
+    "id": 47,
+    "name": "Đồng hồ để bàn hồ lô hút tài lộc DHB-503",
+    "price": 15000000,
+    "categoryId": 5,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/47/1.jpg",
+      "/images/products/47/2.jpg",
+      "/images/products/47/3.jpg",
+      "/images/products/47/4.jpg"
+    ],
+    "description": "Là mẫu đồng hồ trang trí thích hợp đặt ở phòng khách, phòng làm việc, bàn làm việc hoặc trưng bày. Bên cạnh đó đây còn là món quà đắng cấp dành cho sếp, đối tác, người thân… thể hiện tình cảm, ước muốn của người đem tặng .\nĐồng hồ thiết kế quả hồ lô mang lại may mắn hút tài lộc\nMáy chạy pin, kim trôi tĩnh âm và không đánh chuông.\nMẫu đồng hồ đồng vàng , đế gỗ sẽ giúp những khoảng trống của không gian thêm phần  mới mẻ và sang  trọng hơn."
+  },
+  {
+    "id": 48,
+    "name": "Đồng hồ để bàn hồ lô hút tài lộc DHB-503",
+    "price": 15000000,
+    "categoryId": 5,
+    "length": 120,
+    "width": 60,
+    "height": 75,
+    "images": [
+      "/images/products/48/1.jpg",
+      "/images/products/48/2.jpg",
+      "/images/products/48/3.jpg",
+      "/images/products/48/4.jpg"
+    ],
+    "description": "Là mẫu đồng hồ trang trí thích hợp đặt ở phòng khách, phòng làm việc, bàn làm việc hoặc trưng bày. Bên cạnh đó đây còn là món quà đắng cấp dành cho sếp, đối tác, người thân… thể hiện tình cảm, ước muốn của người đem tặng .\nĐồng hồ thiết kế quả hồ lô mang lại may mắn hút tài lộc\nMáy chạy pin, kim trôi tĩnh âm và không đánh chuông.\nMẫu đồng hồ đồng vàng , đế gỗ sẽ giúp những khoảng trống của không gian thêm phần  mới mẻ và sang  trọng hơn."
+  }
+
+
+
+]
