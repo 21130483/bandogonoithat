@@ -1,17 +1,19 @@
-import {Stack, Button, Form, Container, Badge, Modal} from 'react-bootstrap';
+import {Stack, Button, Form, Container, Badge, Modal, InputGroup, ListGroup} from 'react-bootstrap';
 import '../../css/Header.css';
 import { TiShoppingCart } from "react-icons/ti";
-import { FaRegUser } from "react-icons/fa";
+import {FaSearch, FaTimesCircle} from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-import { CiUser } from "react-icons/ci";
 import React, {useState} from "react";
-import Product from "../../pages/Product";
-import AuthModal from "../../pages/AuthModal";
+import { Image } from 'react-bootstrap';
+import {Link} from "react-router-dom"; // Đảm bảo có dòng này
 
 function Header(){
     const CartIcon = TiShoppingCart as any;
     const UserIcon = FaUser as any;
 
+
+    const FaSearchIcon = FaSearch as any;
+    const FaTimesCircleIcon = FaTimesCircle as any;
 
 
     const [show, setShow] = useState(false);
@@ -24,21 +26,77 @@ function Header(){
     };
     const backToLogin = () => setMode('login');
 
+    const [searchTerm, setSearchTerm] = useState("");
+    const [showSuggestions, setShowSuggestions] = useState(false);
+
+    // Dữ liệu mẫu gợi ý
+    const suggestions = [
+        { id: 1, name: "Bàn Chải Đánh Răng P/S Lông Tơ Mềm Mại", img: "link_anh_1" },
+        { id: 2, name: "Kem Đánh Răng P/S Chăm Sóc Toàn Diện", img: "link_anh_2" },
+    ];
 
     return (
         <header className="bg-light p-3 border-bottom align-items-center w-100">
             <Container>
                 <Stack direction="horizontal" gap={3}>
                     {/* 1. Logo */}
-                    <div className="fw-bold fs-4">NỘI THẤT</div>
+                    <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <div className="fw-bold fs-4" >
+
+                            <Image src={"/images/logo.png"} alt="logo"  style={{ width: "140px" , height: "65px"}} />
+                        </div>
+                    </Link>
+
 
                     {/* 2. Thanh tìm kiếm (nằm giữa) */}
                     <div className="ms-auto me-auto" style={{ width: '40%' }}>
-                        <Form.Control
-                            type="search"
-                            placeholder="Tìm kiếm sản phẩm"
-                            className="rounded-pill"
-                        />
+                        {/*<Form.Control*/}
+                        {/*    type="search"*/}
+                        {/*    placeholder="Tìm kiếm sản phẩm"*/}
+                        {/*    className="rounded-pill"*/}
+                        {/*/>*/}
+                        <div className="search-container position-relative w-100" style={{ maxWidth: '600px' }}>
+                            {/* Thanh Input */}
+                            <InputGroup className="rounded-pill overflow-hidden border">
+                                <InputGroup.Text className="bg-white border-0">
+                                    <FaSearchIcon color="#666" />
+                                </InputGroup.Text>
+                                <Form.Control
+                                    placeholder="Bạn đang tìm gì hôm nay..."
+                                    className="border-0 shadow-none py-2"
+                                    value={searchTerm}
+                                    onChange={(e) => {
+                                        setSearchTerm(e.target.value);
+                                        setShowSuggestions(e.target.value.length > 0);
+                                    }}
+                                />
+                                {searchTerm && (
+                                    <InputGroup.Text className="bg-white border-0 cursor-pointer" onClick={() => setSearchTerm("")}>
+                                        <FaTimesCircleIcon color="#ccc" />
+                                    </InputGroup.Text>
+                                )}
+                            </InputGroup>
+
+                            {/* Bảng gợi ý (Dropdown) */}
+                            {showSuggestions && (
+                                <ListGroup className="position-absolute w-100 shadow-lg mt-1 z-index-modal border-0 rounded-3 overflow-hidden">
+                                    <ListGroup.Item className="bg-light small fw-bold text-muted border-0">Danh mục</ListGroup.Item>
+                                    <ListGroup.Item action className="border-0 py-2">Giảm đau, hạ sốt</ListGroup.Item>
+
+                                    <hr className="m-0 opacity-25" />
+
+                                    {/* Danh sách sản phẩm */}
+                                    {suggestions.map(item => (
+                                        <ListGroup.Item action key={item.id} className="border-0 d-flex align-items-center gap-3 py-3">
+                                            <div className="border rounded p-1" style={{ width: '50px', height: '50px' }}>
+                                                <Image src={item.img} fluid />
+                                            </div>
+                                            <span className="fw-medium text-dark">{item.name}</span>
+                                        </ListGroup.Item>
+                                    ))}
+                                </ListGroup>
+                            )}
+                        </div>
                     </div>
 
                     <div  className="fw-bold fs-4">

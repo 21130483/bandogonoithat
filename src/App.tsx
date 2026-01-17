@@ -10,13 +10,9 @@ import Footer from "./component/Common/Footer";
 function App() {
   return (
 
-    <div className="App">
-        <Header />
-      <RouterProvider router={router}>
-        <Outlet/>
-      </RouterProvider>
-        <Footer />
-    </div>
+      <div className="App">
+          <RouterProvider router={router} />
+      </div>
   );
 }
 

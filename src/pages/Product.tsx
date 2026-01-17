@@ -7,28 +7,47 @@ import {TiShoppingCart} from "react-icons/ti";
 import ProductImageList from "../component/Product/ProductImageList";
 import SimilarProducts from "../component/Product/SimilarProducts";
 import "../css/HomePage.css"
+import {useParams} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {AppDispatch, RootState} from "../store/Store";
+import {fetchProducts, selectProductById, selectRandomProductsByCategory} from "../store/productSlice";
+import {useEffect} from "react";
 
 function Product(){
     const CartIcon = TiShoppingCart as any;
-    const images = [
-        {
-            original: "/images/products/1.jpg",
-            thumbnail: "/images/products/1.jpg",
-        },
-        {
-            original: "/images/products/1.jpg",
-            thumbnail: "/images/products/1.jpg",
-        },
-        {
-            original: "/images/products/1.jpg",
-            thumbnail: "/images/products/1.jpg",
-        },
-        {
-            original: "/images/products/1.jpg",
-            thumbnail: "/images/products/1.jpg",
+
+    const { id } = useParams();
+    const dispatch = useDispatch<AppDispatch>();
+
+    // 1. Lấy thông tin sản phẩm hiện tại
+    const product = useSelector((state: RootState) => selectProductById(state, id || ""));
+    const { items, loading } = useSelector((state: RootState) => state.products);
+
+    useEffect(() => {
+        // Mỗi khi id thay đổi, cuộn trang lên đầu ngay lập tức
+        window.scrollTo(0, 0);
+
+        if (items.length === 0) {
+            dispatch(fetchProducts());
         }
-        // Thêm các ảnh khác...
-    ];
+    }, [id, dispatch, items.length]); // Thêm id vào danh sách phụ thuộc
+
+    // 2. Lấy danh sách sản phẩm tương tự (cùng CategoryId)
+    const similarProducts = useSelector((state: RootState) =>
+        product ? selectRandomProductsByCategory(state, product.categoryId, 5) : []
+    );
+
+    // Nếu đang tải hoặc không tìm thấy sản phẩm
+    if (!product) {
+        return <Container className="p-5 text-center"><h3>Đang tải sản phẩm...</h3></Container>;
+    }
+
+    // 3. Định dạng lại mảng ảnh cho ImageGallery
+    const galleryImages = product.images.map(img => ({
+        original: img,
+        thumbnail: img
+    }));
+
     return (
         <div>
             <Bread />
@@ -37,7 +56,7 @@ function Product(){
                     <Col md={7}>
                         <div className="product-image-slider">
                             <ImageGallery
-                                items={images}
+                                items={galleryImages}
                                 showPlayButton={false} // Ẩn nút tự động chạy
                                 showFullscreenButton={true} // Hiện nút phóng to
                                 thumbnailPosition="bottom" // Đặt thumbnail ở dưới (giống ảnh mẫu)
@@ -47,13 +66,12 @@ function Product(){
                     </Col>
 
                     <Col md={5} className="d-flex flex-column gap-3">
-                        <span className="fw-bold uppercase text-md-start" style={{fontSize:"30px"}}>Bộ bàn mặt đá Ceramic Nhập Khẩu 4 ghế Benla chân A màu nâu</span>
-                        <span className={"fw-bold text-md-start"} style={{color:"#b0803c", fontSize:"30px"}}>2.700.000₫</span>
+                        <span className="fw-bold uppercase text-md-start" style={{fontSize:"30px"}}>{product.name}</span>
+                        <span className={"fw-bold text-md-start"} style={{color:"#b0803c", fontSize:"30px"}}>{product.price}₫</span>
                         <ul className="product-specs mt-3 text-md-start d-flex gap-3 flex-column" style={{ listStyleType: 'disc', paddingLeft: '20px',fontSize: '20px' }}>
-                            <li><b>Chất liệu:</b> Gỗ công nghiệp Ba Thanh hoặc An Cường lõi xanh... sdasda sadhasdas  sad asd</li>
-                            <li><b>Chất lượng:</b> Sản xuất tại Việt Nam theo tiêu chuẩn xuất khẩu...</li>
-                            <li><b>Chất lượng:</b> Sản xuất tại Việt Nam theo tiêu chuẩn xuất khẩu...</li>
-                            <li><b>Chất lượng:</b> Sản xuất tại Việt Nam theo tiêu chuẩn xuất khẩu...</li>
+                            <li><b>Chiều dài:</b> {product.length}cmd</li>
+                            <li><b>Chiều rộng:</b> {product.width}cm</li>
+                            <li><b>Chiều cao:</b>   {product.height}cm</li>
                             <li><b>Bảo hành:</b> 5 năm</li>
                         </ul>
                         <div>
@@ -70,14 +88,12 @@ function Product(){
                 </Row>
                 <div className={"text-md-start"}>
                     <h1>Mô tả </h1>
-                    <span>Hiện nay nhu cầu về giường ngủ phục vụ sở thích, diện tích sử dụng của người tiêu dùng ngày càng cao, vì vậy mà hình thái, kích thước, mẫu mã của giường ngủ cũng trở nên đa dạng và phong phú. Một trong các loại giường ngủ được yêu thích bởi sự nhỏ gọn và xinh xắn hiện nay là giường đơn. Giường đơn có rất nhiều kích thước nhưng sau đây, nội thất Kaya sẽ giới thiệu đến các bạn loại giường đơn với kích thước 100×200 cm.
-
-Giường đơn với chất liệu gỗ thông Canada, đặc biệt là loại gỗ thông trắng, gỗ thông vàng được sử dụng làm đồ nội thất rất phổ biến. Gỗ thông là loại gỗ có hoa văn rất đẹp và đa dạng. So với các loại gỗ khác thì gỗ thông có thể nhẹ hơn về khối lượng nhưng về khả năng chịu lực và độ liên kết của nó lại khá tốt. Không những vậy, gỗ thông tự nhiên còn có độ dẻo tương đối cao. Đặc biệt, loại gỗ này có một lớp nhựa trong tiết ra để bảo vệ bề mặt gỗ giúp cho bề mặt gỗ có vẻ đẹp sang trọng hơn khi kết hợp với ánh sáng. Đồng thời được xử lý chống cong, vênh, mối mọt cực kỳ tốt</span>
+                    <span>{product.description}</span>
                 </div>
-                <ProductImageList images={images} />
+                <ProductImageList images={galleryImages} />
                 <div className={"text-md-start"}>
                     <h1 className={"title"}>Sản phẩm tương tự</h1>
-                    <SimilarProducts />
+                    <SimilarProducts  products={similarProducts}/>
                 </div>
 
             </Container>
