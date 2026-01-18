@@ -12,6 +12,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../store/Store";
 import {fetchProducts, selectProductById, selectRandomProductsByCategory} from "../store/productSlice";
 import {useEffect} from "react";
+import {addToCart} from "../store/cartSlice";
 
 function Product(){
     const CartIcon = TiShoppingCart as any;
@@ -48,6 +49,12 @@ function Product(){
         thumbnail: img
     }));
 
+    // Hàm xử lý thêm vào giỏ hàng
+    const handleAddToCart = (e: React.MouseEvent) => {
+        dispatch(addToCart(product));
+        console.log("Đã thêm vào giỏ hàng:",product.id);
+    };
+
     return (
         <div>
             <Bread />
@@ -75,7 +82,7 @@ function Product(){
                             <li><b>Bảo hành:</b> 5 năm</li>
                         </ul>
                         <div>
-                            <button className={"btn-wood"} style={{fontSize:"25px"}}>
+                            <button className={"btn-wood"} style={{fontSize:"25px"}} onClick={handleAddToCart}>
                                 <div className="d-flex d-inline-block gap-1 justify-content-center align-items-center" >
                                     <CartIcon size={30} />
                                     Thêm vào giỏ hàng

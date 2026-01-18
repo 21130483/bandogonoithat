@@ -5,7 +5,9 @@ import {FaSearch, FaTimesCircle} from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import React, {useState} from "react";
 import { Image } from 'react-bootstrap';
-import {Link} from "react-router-dom"; // Đảm bảo có dòng này
+import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
+import {RootState} from "../../store/Store";
 
 function Header(){
     const CartIcon = TiShoppingCart as any;
@@ -19,6 +21,7 @@ function Header(){
     const [show, setShow] = useState(false);
     // 'login' hoặc 'register'
     const [mode, setMode] = useState<'login' | 'register' | 'forgot'>('login');
+    const totalQuantity = useSelector((state: RootState) => state.cart.totalQuantity);
 
     const handleClose = () => {
         setShow(false);
@@ -35,6 +38,7 @@ function Header(){
         { id: 2, name: "Kem Đánh Răng P/S Chăm Sóc Toàn Diện", img: "link_anh_2" },
     ];
 
+
     return (
         <header className="bg-light p-3 border-bottom align-items-center w-100">
             <Container>
@@ -50,11 +54,6 @@ function Header(){
 
                     {/* 2. Thanh tìm kiếm (nằm giữa) */}
                     <div className="ms-auto me-auto" style={{ width: '40%' }}>
-                        {/*<Form.Control*/}
-                        {/*    type="search"*/}
-                        {/*    placeholder="Tìm kiếm sản phẩm"*/}
-                        {/*    className="rounded-pill"*/}
-                        {/*/>*/}
                         <div className="search-container position-relative w-100" style={{ maxWidth: '600px' }}>
                             {/* Thanh Input */}
                             <InputGroup className="rounded-pill overflow-hidden border">
@@ -101,29 +100,33 @@ function Header(){
 
                     <div  className="fw-bold fs-4">
                         <Stack direction="horizontal" gap={3}>
-                            <button className={"btn-wood"}>
-                                <div className="d-flex align-items-center justify-content-center w-100 gap-1" style={{height:"25px"}}>
-                                    {/* Bọc Icon và Badge vào một khối định vị */}
-                                    <div className="position-relative d-inline-block">
-                                        <CartIcon size={25} />
+                            <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <button className={"btn-wood"}>
+                                    <div className="d-flex align-items-center justify-content-center w-100 gap-1" style={{height:"25px"}}>
+                                        {/* Bọc Icon và Badge vào một khối định vị */}
+                                        <div className="position-relative d-inline-block">
 
-                                        {/* Số 9 nằm ở góc phải trên */}
-                                        <Badge
-                                            pill
-                                            bg="danger"
-                                            className="position-absolute start-100 translate-middle"
-                                            style={{ fontSize: '0.6rem' }} // Chỉnh cỡ chữ nhỏ lại cho cân đối
-                                        >
-                                            9
-                                        </Badge>
-                                    </div>
+                                            <CartIcon size={25} />
+                                            {totalQuantity > 0 && (
+                                                <Badge
+                                                    pill
+                                                    bg="danger"
+                                                    className="position-absolute start-100 translate-middle"
+                                                    style={{ fontSize: '0.6rem' }} // Chỉnh cỡ chữ nhỏ lại cho cân đối
+                                                >
+                                                    {totalQuantity}
+                                                </Badge>
+                                            )}
 
-                                    {/* Chữ Giỏ hàng nằm bên cạnh */}
-                                    <div >
-                                        Giỏ hàng
+                                        </div>
+
+                                        {/* Chữ Giỏ hàng nằm bên cạnh */}
+                                        <div >
+                                            Giỏ hàng
+                                        </div>
                                     </div>
-                                </div>
-                            </button>
+                                </button>
+                            </Link>
                             <button className={"btn-wood"}>
                                 <div onClick={() => setShow(true)} className="d-flex d-inline-block gap-1 justify-content-center align-items-center" >
                                     <UserIcon size={20} />
