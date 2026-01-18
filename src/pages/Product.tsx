@@ -74,7 +74,7 @@ function Product(){
 
                     <Col md={5} className="d-flex flex-column gap-3">
                         <span className="fw-bold uppercase text-md-start" style={{fontSize:"30px"}}>{product.name}</span>
-                        <span className={"fw-bold text-md-start"} style={{color:"#b0803c", fontSize:"30px"}}>{product.price}₫</span>
+                        <span className={"fw-bold text-md-start"} style={{color:"#b0803c", fontSize:"30px"}}>{(product.price).toLocaleString()} ₫</span>
                         <ul className="product-specs mt-3 text-md-start d-flex gap-3 flex-column" style={{ listStyleType: 'disc', paddingLeft: '20px',fontSize: '20px' }}>
                             <li><b>Chiều dài:</b> {product.length}cmd</li>
                             <li><b>Chiều rộng:</b> {product.width}cm</li>

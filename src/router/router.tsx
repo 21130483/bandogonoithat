@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
         element: <MainLayout />, // Layout chứa Header/Footer
         children: [
             { path: "/", element: <HomePage /> },
-            { path: "/products", element: <Products /> },
+            { path: "/products/:filterType/:value", element: <Products /> },
             { path: "/product/:id", element: <Product /> },
             { path: "/cart", element: <Cart /> },
             { path: "/transaction", element: <Transaction /> }

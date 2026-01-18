@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import TableCart from "../component/Cart/TableCart";
 import "../css/Cart.css";
 import {RootState} from "../store/Store";
+import {useNavigate} from "react-router-dom";
 
 function Cart() {
     // Lấy dữ liệu từ Redux Store
@@ -10,6 +11,13 @@ function Cart() {
 
     // Giả sử phí giảm giá (nếu bạn có logic tính toán này)
     const discount = 0;
+
+    const navigate = useNavigate();
+    const handleGoToCheckout = () => {
+        if (totalQuantity > 0) {
+            navigate("/transaction"); // Điều hướng đến trang thanh toán
+        }
+    };
 
     return (
         <Container className="p-3">
@@ -34,7 +42,7 @@ function Cart() {
                         <div className="d-flex justify-content-between mb-3">
                             <span className="text-muted">Giảm giá sản phẩm</span>
                             <span className="text-dark fw-medium text-success">
-                                -{discount.toLocaleString()} đ
+                                {discount.toLocaleString()} đ
                             </span>
                         </div>
 
@@ -54,6 +62,7 @@ function Cart() {
                             style={{ fontWeight: "bold" }}
                             type="button"
                             disabled={totalQuantity === 0} // Vô hiệu hóa nếu giỏ trống
+                            onClick={handleGoToCheckout}
                         >
                             Mua hàng ({totalQuantity})
                         </button>

@@ -17,6 +17,13 @@
     transition: transform 0.1s; /* Phản hồi cực nhanh khi nhấn */
 }
 
+/* Trong file Cart.css */
+.btn-wood:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+    border-color: #bbb;
+}
+
 .search-container {
     z-index: 1050; /* Đảm bảo nằm trên header */
 }

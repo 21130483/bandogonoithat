@@ -3,9 +3,9 @@ import '../../css/Header.css';
 import { TiShoppingCart } from "react-icons/ti";
 import {FaSearch, FaTimesCircle} from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-import React, {useState} from "react";
+import React, {useMemo, useState} from "react";
 import { Image } from 'react-bootstrap';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {RootState} from "../../store/Store";
 
@@ -16,6 +16,7 @@ function Header(){
 
     const FaSearchIcon = FaSearch as any;
     const FaTimesCircleIcon = FaTimesCircle as any;
+
 
 
     const [show, setShow] = useState(false);
@@ -29,14 +30,46 @@ function Header(){
     };
     const backToLogin = () => setMode('login');
 
+    const navigate = useNavigate();
+
+
+
     const [searchTerm, setSearchTerm] = useState("");
     const [showSuggestions, setShowSuggestions] = useState(false);
 
-    // Dữ liệu mẫu gợi ý
-    const suggestions = [
-        { id: 1, name: "Bàn Chải Đánh Răng P/S Lông Tơ Mềm Mại", img: "link_anh_1" },
-        { id: 2, name: "Kem Đánh Răng P/S Chăm Sóc Toàn Diện", img: "link_anh_2" },
-    ];
+    const allProducts = useSelector((state: RootState) => state.products.items);
+
+    // Lọc sản phẩm ngay khi người dùng gõ chữ
+    const suggestions = useMemo(() => {
+        if (searchTerm.trim().length === 0) return [];
+
+        return allProducts.filter(item =>
+            item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        ).slice(0, 5); // Chỉ lấy 5 kết quả đầu tiên để gợi ý
+    }, [searchTerm, allProducts]);
+    const handleSelectProduct = (id: number) => {
+        navigate(`/product/${id}`); // Chuyển đến trang chi tiết
+        setSearchTerm("");          // Xóa chữ đã gõ
+        setShowSuggestions(false);  // Đóng bảng gợi ý
+    };
+    const handleSearchSubmit = () => {
+        if (searchTerm.trim()) {
+            // Chuyển hướng sang trang tìm kiếm với query parameter
+            navigate(`/products/search/${encodeURIComponent(searchTerm.trim())}`);
+
+            // Đóng bảng gợi ý sau khi Enter
+            setShowSuggestions(false);
+        }
+    };
+
+    const handleKeyDown = (e: React.KeyboardEvent) => {
+        if (e.key === 'Enter') {
+            // Ngăn form submit nếu thanh search nằm trong thẻ <form>
+            e.preventDefault();
+            handleSearchSubmit();
+        }
+    };
+
 
 
     return (
@@ -64,10 +97,31 @@ function Header(){
                                     placeholder="Bạn đang tìm gì hôm nay..."
                                     className="border-0 shadow-none py-2"
                                     value={searchTerm}
+                                    onFocus={() => {
+                                        if (searchTerm.trim().length > 0) {
+                                            setShowSuggestions(true);
+                                        }
+                                    }}
+
+                                    // Khi người dùng click ra chỗ khác
+                                    onBlur={() => {
+                                        // Cần dùng setTimeout vì nếu bạn click vào một sản phẩm trong ListGroup,
+                                        // sự kiện Blur sẽ chạy trước click. Delay 200ms giúp lệnh chuyển trang kịp chạy.
+                                        setTimeout(() => {
+                                            setShowSuggestions(false);
+                                        }, 200);
+                                    }}
+                                    onKeyDown={(e) => {
+                                        if (e.key === 'Escape') {
+                                            setShowSuggestions(false);
+                                        }
+                                        handleKeyDown(e as any);
+                                    }}
                                     onChange={(e) => {
                                         setSearchTerm(e.target.value);
                                         setShowSuggestions(e.target.value.length > 0);
                                     }}
+
                                 />
                                 {searchTerm && (
                                     <InputGroup.Text className="bg-white border-0 cursor-pointer" onClick={() => setSearchTerm("")}>
@@ -76,19 +130,17 @@ function Header(){
                                 )}
                             </InputGroup>
 
-                            {/* Bảng gợi ý (Dropdown) */}
                             {showSuggestions && (
                                 <ListGroup className="position-absolute w-100 shadow-lg mt-1 z-index-modal border-0 rounded-3 overflow-hidden">
-                                    <ListGroup.Item className="bg-light small fw-bold text-muted border-0">Danh mục</ListGroup.Item>
-                                    <ListGroup.Item action className="border-0 py-2">Giảm đau, hạ sốt</ListGroup.Item>
-
-                                    <hr className="m-0 opacity-25" />
-
-                                    {/* Danh sách sản phẩm */}
                                     {suggestions.map(item => (
-                                        <ListGroup.Item action key={item.id} className="border-0 d-flex align-items-center gap-3 py-3">
+                                        <ListGroup.Item
+                                            action
+                                            key={item.id}
+                                            onClick={() => handleSelectProduct(item.id)} // Thêm sự kiện click
+                                            className="border-0 d-flex align-items-center gap-3 py-3"
+                                        >
                                             <div className="border rounded p-1" style={{ width: '50px', height: '50px' }}>
-                                                <Image src={item.img} fluid />
+                                                <Image src={item.images[0]} fluid />
                                             </div>
                                             <span className="fw-medium text-dark">{item.name}</span>
                                         </ListGroup.Item>

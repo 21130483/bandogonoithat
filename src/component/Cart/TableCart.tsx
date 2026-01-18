@@ -16,6 +16,8 @@ function TableCart() {
         const newQty = currentQty + delta;
         if (newQty >= 1 && newQty <= 99) {
             dispatch(updateQuantity({ id, quantity: newQty }));
+        }else if(newQty <= 0){
+            dispatch(removeFromCart(id));
         }
     };
 
