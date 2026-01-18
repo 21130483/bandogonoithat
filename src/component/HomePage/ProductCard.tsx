@@ -4,21 +4,31 @@ import "../../css/Product.css"
 import { TiShoppingCart } from "react-icons/ti";
 import {Product} from "../../types/Product";
 import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {addToCart} from "../../store/cartSlice";
 
 
 function ProductCard(props: {product: Product}) {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const CartIcon = TiShoppingCart as any;
+
+
     const handleGoToDetail = () => {
         navigate(`/product/${props.product.id}`);
     };
     // Hàm xử lý thêm vào giỏ hàng
     const handleAddToCart = (e: React.MouseEvent) => {
         e.stopPropagation(); // QUAN TRỌNG: Ngăn sự kiện click lan ra thẻ Card cha
-        console.log("Đã thêm vào giỏ hàng:", props.product.name);
+        dispatch(addToCart(props.product));
+        console.log("Đã thêm vào giỏ hàng:", props.product.id);
         // Thêm logic xử lý giỏ hàng của bạn ở đây
     };
 
-    const CartIcon = TiShoppingCart as any;
+
+
+
+
     return (
         <Card className="product-card" style={{ width: '18rem' }} onClick={handleGoToDetail}>
             <Card.Img variant="top" src={props.product.images[0]} style={{
@@ -31,8 +41,8 @@ function ProductCard(props: {product: Product}) {
                 <Card.Text style={{color: '#b0803c', fontSize: '25px'}}>
                     {props.product.price}₫
                 </Card.Text>
-                <button className={"btn-wood"}>
-                    <div className="d-flex justify-content-center align-items-center gap-1" onClick={handleAddToCart}>
+                <button className={"btn-wood"} onClick={handleAddToCart} type="button">
+                    <div className="d-flex justify-content-center align-items-center gap-1" >
                         <CartIcon  size={30}/>
                         Thêm vào giỏ hàng
                     </div>
