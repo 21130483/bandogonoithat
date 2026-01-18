@@ -5,10 +5,7 @@ function Arrange(){
     return (
         <Container>
             <Row className="gy-3">
-                <span className={"titleProducts title"}>
-                    <h1>Kết quả tìm kiếm "s"</h1>
 
-                </span>
                 <Col md={12} style={{display: "flex"}}>
                     <div className={"gy-3 mb-3"} style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
 
