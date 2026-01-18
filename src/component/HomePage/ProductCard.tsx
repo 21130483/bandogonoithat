@@ -38,8 +38,8 @@ function ProductCard(props: {product: Product}) {
             }}/>
             <Card.Body>
                 <Card.Title> {props.product.name}</Card.Title>
-                <Card.Text style={{color: '#b0803c', fontSize: '25px'}}>
-                    {props.product.price}₫
+                <Card.Text style={{color: '#b0803c', fontSize: '25px', fontWeight: 'bold'}}>
+                    {(props.product.price).toLocaleString()} ₫{}
                 </Card.Text>
                 <button className={"btn-wood"} onClick={handleAddToCart} type="button">
                     <div className="d-flex justify-content-center align-items-center gap-1" >

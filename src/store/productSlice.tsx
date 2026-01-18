@@ -64,4 +64,14 @@ export const selectRandomProductsByCategory = (state: RootState, categoryId: num
     // 2. Sử dụng hàm getRandomProducts bạn đã viết để xáo trộn
     return getRandomProducts(filtered, count);
 };
+
+// Hàm tìm kiếm sản phẩm theo tên
+export const selectProductsBySearch = (state: RootState, searchTerm: string) => {
+    if (!searchTerm.trim()) return []; // Trả về mảng rỗng nếu không nhập gì
+
+    return state.products.items.filter((product: Product) =>
+        product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+};
+
 export default productSlice.reducer;
